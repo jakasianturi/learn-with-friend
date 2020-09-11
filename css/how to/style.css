@@ -1,0 +1,17 @@
+ul {
+    list-style: none;
+}
+ul li {
+    display: inline;
+    margin-right: 20px;
+    background-color: rgb(153, 246, 246);
+    padding: 8px;
+    border-radius: 50%;
+    color: rgb(252, 125, 125);
+    font-weight: 600;
+}
+p {
+    font-weight: 700;
+    font-style: italic;
+    font-size: 24px;
+}
