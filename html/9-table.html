@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        padding: 4px 15px;
+      }
+      th {
+        background-color: #dddddd;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- This code have a some CSS code. Just to make a background color and collapse a table divider. -->
+
+    <!-- Simple Table -->
+    <table>
+      <thead>
+        <!-- Table title / caption -->
+        <caption>
+          <h3 style="color: rgb(130, 12, 185); font-size: 30px; margin: 0">
+            Table
+          </h3>
+        </caption>
+        <tr>
+          <th rowspan="2">Full Name</th>
+          <th rowspan="2">Age</th>
+          <th colspan="2">Contact</th>
+        </tr>
+        <tr>
+          <th rowspan="2">Email</th>
+          <th rowspan="2">Phone</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Jhon Doe</td>
+          <td>17</td>
+          <td>Jhon@gmail.com</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Eve</td>
+          <td>25</td>
+          <td>Evemail@mail.com</td>
+          <td>021-003</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Sales Invoice -->
+    <table>
+      <!-- Table title / caption -->
+      <thead>
+        <caption>
+          <h3>Faktur</h3>
+        </caption>
+        <tr>
+          <th>No.</th>
+          <th>Kode Barang</th>
+          <th>Nama Barang</th>
+          <th>Harga Satuan</th>
+          <th>Qty</th>
+          <th>Diskon</th>
+          <th>Total Harga</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>ATK501F</td>
+          <td>Penggaris</td>
+          <td>2000</td>
+          <td>12</td>
+          <td>500</td>
+          <td>23.500</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>ATK502R</td>
+          <td>Buku Tulis</td>
+          <td>8000</td>
+          <td>20</td>
+          <td>3000</td>
+          <td>157.000</td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>ATK508F</td>
+          <td>Pulpen</td>
+          <td>2000</td>
+          <td>12</td>
+          <td>100</td>
+          <td>23.000</td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>ATK521G</td>
+          <td>Pensil Warna</td>
+          <td>20000</td>
+          <td>5</td>
+          <td>5000</td>
+          <td>95.000</td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>ATK201F</td>
+          <td>Penghapus</td>
+          <td>1000</td>
+          <td>10</td>
+          <td>500</td>
+          <td>9.500</td>
+        </tr>
+        <tr>
+          <td colspan="6" style="text-align: right">
+            Total Yang Harus Dibayar :
+          </td>
+          <td><b>Rp.308.000</b></td>
+        </tr>
+        <tr>
+          <td colspan="7" style="text-align: right">
+            Terbilang :
+            <b>Tiga Ratus Delapan Ribu Rupiah</b>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="6" style="text-align: right">Cash :</td>
+          <td><b>Rp.500.000</b></td>
+        </tr>
+        <tr>
+          <td colspan="6" style="text-align: right">Kembalian :</td>
+          <td><b>Rp.192.000</b></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
