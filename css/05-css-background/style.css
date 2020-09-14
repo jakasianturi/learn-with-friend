@@ -2,22 +2,20 @@
 body#bg-color {
   background-color: lightblue;
 }
-h1 {
-  background-color: green;
+body#bg-color h1 {
+  background-color: rgb(72, 194, 72);
 }
-
-div {
+body#bg-color div {
   background-color: rgb(221, 173, 230);
 }
-
-p {
+body#bg-color p {
   background-color: yellow;
 }
 
 /* This is Style for CSS Background Images */
 body#bg-image {
   background-color: rgb(170, 93, 243);
-  background-image: url(../../image/woman.jpg);
+  background-image: url(../image/woman.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -25,4 +23,8 @@ body#bg-image {
   /* Background Image Shorthand */
   /* background: rgb(170, 93, 243) url(../../image/woman.jpg)
       no-repeat center center; */
+}
+
+body#bg-image h1 {
+  display: none;
 }
