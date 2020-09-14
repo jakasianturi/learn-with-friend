@@ -1,0 +1,9 @@
+div {
+  background-color: rgb(127, 248, 127);
+  height: 250px;
+  width: 300px;
+  /* max-width: 500px;
+  max-height: 200px;
+  min-width: 200px;
+  min-height: 200px; */
+}
