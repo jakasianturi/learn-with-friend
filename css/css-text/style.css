@@ -1,0 +1,43 @@
+body {
+  background-color: rgb(240, 212, 176);
+  color: blue;
+}
+
+h1 {
+  background-color: cornflowerblue;
+  color: black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p.first {
+  text-align: justify;
+  color: rgb(162, 59, 221);
+  word-spacing: 2px;
+}
+
+span {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  /* reverse the text */
+  text-decoration: underline;
+  /* underlined text */
+}
+
+img.middle {
+  vertical-align: middle;
+}
+
+p.second {
+  text-align: left;
+  color: rgb(5, 100, 92);
+  text-indent: 20px;
+  letter-spacing: 2px;
+  line-height: 2;
+  /*Default Line Height Browser in most browser is 110%-120%*/
+}
+
+p.third {
+  text-align: right;
+  text-shadow: 2px 2px 5px rgb(253, 4, 149);
+}
