@@ -35,6 +35,7 @@ p.second {
   letter-spacing: 2px;
   line-height: 2;
   /*Default Line Height Browser in most browser is 110%-120%*/
+  white-space: nowrap;
 }
 
 p.third {
