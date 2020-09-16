@@ -1,0 +1,32 @@
+p.font {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+      sans-serif;
+  font-size: 2rem;
+  font-style: italic;
+  font-weight: bold;
+  line-height: 1;
+}
+p.font-shorthand {
+  font: italic bold 2rem/1 'Franklin Gothic Medium',
+      'Arial Narrow', Arial, sans-serif;
+}
+
+p.sansserif {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2.5em; /*1em = 16px (default size in browser)*/
+  font-style: oblique;
+  font-weight: normal;
+  line-height: 1;
+  font-variant: small-caps;
+}
+
+p.font-shorthand2 {
+  font :  oblique small-caps normal 2.5em/1 Arial,
+      Helvetica, sans-serif;
+}
+/* remember! urutan untuk shorthand
+font-style
+font-variant
+font-weight
+font-size/line-height
+font-family */
