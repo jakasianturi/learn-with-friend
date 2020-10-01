@@ -1,0 +1,135 @@
+/* Style dasar yang menjadi acuan elemen dibawahnya (child) jika tidak diatur */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  background-color: rgb(22, 22, 22);
+  /* background-color: rgb(255, 255, 255); */
+  color: rgb(107, 107, 107);
+}
+
+/* mengubah default warna (blue) dan text-decoration (underline) dari tag a */
+/* (opacity 0.75) maks opacity = 1*/
+a {
+  color: rgba(24, 24, 24, 0.75);
+  text-decoration: none;
+}
+/* mouse-hover (mouse menyentuh elemen) (opacity 1) */
+a:hover {
+  color: rgb(24, 24, 24, 1);
+}
+
+/*
+  ==============================================
+  Style untuk bagian .wrapper (pembungkus utama)
+  ==============================================
+*/
+/* membungkus elemen .bio dan .profile-image */
+.wrapper {
+  width: 60%;
+  max-width: 800px;
+  background-color: rgb(230, 227, 227);
+  margin: 80px auto;
+  padding: 60px 40px;
+  border-radius: 12px;
+}
+
+/* Karena menggunakan float didalam element .wrapper maka dibutuhkan sedikit trik untuk membuat .wrapper bisa meregang untuk menampung elemen dibawahnya (child) */
+/* trik pertama */
+/* .clearfix {
+  overflow: auto;
+} */
+/* trik kedua (paling sering digunakan) */
+.clearfix::after {
+  content: '';
+  clear: both;
+  display: table;
+}
+
+/*
+  =======================
+  Style untuk bagian .bio
+  =======================
+*/
+/* membungkus semua elemen mulai dari .bio-title s/d .copyright */
+.bio {
+  float: left;
+  width: 60%;
+  max-width: 560px;
+}
+/* title */
+.bio-title {
+  color: rgb(39, 38, 38);
+  font-size: 48px;
+  line-height: 1.2;
+  word-wrap: break-word;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+/* semua .paragraph rata kanan-kiri (justify) */
+.paragraph {
+  margin-top: 0;
+  margin-bottom: 24px;
+  text-align: justify;
+  word-wrap: break-word;
+}
+/* bold (menebalkan) text */
+.text-bold {
+  color: rgba(24, 24, 24, 0.75);
+  font-weight: bold;
+}
+/* elemen .get-in-touch
+  digunakan display:block agar border meregang jauh sampai akhir pembatas elemen parentnya.
+  dalam html, .get-in-touch menggunakan tag span, span default displaynya adalah inline
+*/
+.get-in-touch {
+  color: rgb(49, 46, 46);
+  font-size: 24px;
+  line-height: 1.6;
+  border-bottom: 1px solid rgb(126, 125, 125);
+  display: block;
+  margin-bottom: 24px;
+}
+/* pembungkus .social-icons*/
+.social-icons {
+  margin: 24px auto;
+}
+/* mengatur margin (jarak) setiap .icons */
+.social-icons .icons {
+  margin-right: 12px;
+}
+/* menghilangkan margin .icons paling terakhir karena tidak ada elemen lain di sebalah kanannya */
+.social-icons .icons:last-child {
+  margin-right: 0;
+}
+/* karena .icons adalah gambar, maka lebarnya harus diatur agar bisa menyesuaikan atau tidak terlalu besar */
+.icons img {
+  width: 16px;
+}
+/* .copyright */
+.copyright {
+  font-size: 12px;
+}
+
+/*
+  =======================
+  Style untuk bagian .profile-image
+  =======================
+*/
+/* overflow mengantisipasi jika gambar/elemen lain dibawahnya (child)  melewati lebar elemen */
+.profile-image {
+  float: left;
+  width: 40%;
+  overflow: auto;
+}
+/* width dan height sebaiknya diatur agar bisa mendapat border radius yg good */
+.profile-image img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
