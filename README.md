@@ -1,5 +1,4 @@
 # learn-with-friends
-Segala sesuatu yg pernah dipelajarin.
+Everything that has ever been learned.
 
-Jangan dilihatin doang, PRAKTEK!
-BCS Praktek make you Great!
+Don't just look at it, PRACTICE! because practice make you Great!
